@@ -23,7 +23,7 @@ const Header = ({ name, title }) => (
             textDecoration: `none`,
           }}
         >
-          {name} {title}
+          {name} <span className="weight-normal">{title}</span>
         </Link>
       </h1>
     </div>

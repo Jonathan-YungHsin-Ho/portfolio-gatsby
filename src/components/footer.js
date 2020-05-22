@@ -1,8 +1,30 @@
 import React from "react"
 
+const footerStyle = {
+  position: "absolute",
+  bottom: 0,
+  right: 0,
+  width: "30rem",
+  padding: "1.5rem 3rem",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+}
+
+const footerLinksStyle = {
+  width: "100%",
+  display: "flex",
+  justifyContent: "space-between",
+}
+
+const footerCopyrightStyle = {
+  marginTop: "1rem",
+  fontSize: "1.1rem",
+}
+
 const Footer = () => (
-  <footer>
-    <div>
+  <footer style={footerStyle}>
+    <div style={footerLinksStyle}>
       <a href="" target="_blank" rel="noopener noreferrer">
         R
       </a>
@@ -35,7 +57,7 @@ const Footer = () => (
         E
       </a>
     </div>
-    <div>
+    <div style={footerCopyrightStyle}>
       © {new Date().getFullYear()}, Built with
       {` `}
       <a

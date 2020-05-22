@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Jonathan Yung-Hsin Ho`,
+    title: `Jonathan Yung-Hsin Ho | Full-Stack Software Engineer`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },

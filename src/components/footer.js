@@ -1,31 +1,30 @@
 import React from "react"
 
 const footerStyle = {
-  position: "absolute",
+  position: `absolute`,
   bottom: 0,
   right: 0,
-  width: "30rem",
-  padding: "1.5rem 3rem",
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
+  padding: `1rem 3rem`,
+  display: `flex`,
+  flexDirection: `column`,
+  alignItems: `center`,
 }
 
 const footerLinksStyle = {
-  width: "100%",
-  display: "flex",
-  justifyContent: "space-between",
+  width: `32rem`,
+  display: `flex`,
+  justifyContent: `space-between`,
 }
 
 const footerCopyrightStyle = {
-  marginTop: "1rem",
-  fontSize: "1.1rem",
+  marginTop: `1rem`,
+  fontSize: `1.1rem`,
 }
 
 const Footer = () => (
   <footer style={footerStyle}>
     <div style={footerLinksStyle}>
-      <a href="" target="_blank" rel="noopener noreferrer">
+      <a href="/" target="_blank" rel="noopener noreferrer">
         R
       </a>
       <a

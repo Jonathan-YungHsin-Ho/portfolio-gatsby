@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
 
+:root {
+  --dark-color: #121212;
+  --light-color: rgba(255, 255, 255, 0.87);
+  /* --light-color: whitesmoke; */
+  /* --hover-color: rgba(255, 255, 255, 0.6); */
+  --hover-color: #606060;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -26,11 +34,23 @@ h1 {
   text-transform: uppercase;
   font-weight: 700;
 
-  margin-bottom: 1.45rem;
+  margin-bottom: 0.5rem;
 
   color: inherit;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
+  line-height: 1.1;
+}
+
+h2 {
+  text-transform: uppercase;
+
+  margin-bottom: 0.5rem;
+
+  color: inherit;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+  font-size: 1.62671rem;
   line-height: 1.1;
 }
 
@@ -39,8 +59,54 @@ a {
   text-decoration: none;
 }
 
-.weight-normal {
-  font-weight: normal;
+form {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 1rem;
+}
+
+input,
+textarea {
+  margin-bottom: 1rem;
+  padding: 1rem;
+
+  border: 1px solid silver;
+  border-radius: 0.3rem;
+
+  font-family: inherit;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid #5e9ed6;
+}
+
+button {
+  width: 13rem;
+  padding: 1rem;
+  margin-top: 0.5rem;
+
+  /* border: none; */
+  /* border-radius: 0.3rem; */
+  border: 1px solid silver;
+
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  /* background-color: var(--light-color); */
+  /* color: var(--dark-color); */
+  transition: background-color 0.2s;
+
+  font-family: inherit;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  cursor: pointer;
 }
 
 /*

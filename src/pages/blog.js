@@ -1,4 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
 
-export default () => <Layout>BLOG</Layout>
+const BlogPage = () => <Layout>BLOG</Layout>
+
+export default BlogPage

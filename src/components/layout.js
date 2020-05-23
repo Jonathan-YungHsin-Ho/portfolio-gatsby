@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
   // `)
 
   const name = "Jonathan Yung-Hsin Ho"
-  const title = "Full-Stack Software Engineer"
+  const title = "Software Engineer"
 
   return (
     <>
@@ -33,13 +33,17 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
+          paddingTop: `1.45rem`,
           maxWidth: 960,
+          height: `calc(100vh - 125px)`,
+          overflow: `scroll`,
+          overflowX: `hidden`,
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
         <main>{children}</main>
-        <Footer />
       </div>
+      <Footer />
     </>
   )
 }

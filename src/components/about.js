@@ -6,22 +6,27 @@ const About = () => (
   <>
     <h2>About Me</h2>
     <div>
-      <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+      <div
+        style={{
+          maxWidth: `100px`,
+          marginBottom: `1.45rem`,
+        }}
+      >
         <Image />
       </div>
       <div>
         <p>
-          I'm a full-stack software engineer and former classroom educator. I
-          joined the field of software development because I enjoy using logical
-          reasoning and problem-solving to bring lines of code to life.
+          I'm a full-stack software engineer and former classroom educator who
+          enjoys using logical reasoning and problem-solving to bring lines of
+          code to life.
         </p>
         <br />
         <p>
           I'm a fast learner and doer, adept at building on my prior knowledge
           and finding resources to bridge gaps in my understanding. The
-          communication and collaboration skills I've developed over my career
-          as an educator and my experience working with diverse groups of people
-          are strengths that I bring to all of my pursuits.
+          communication and collaboration skills I've developed as an educator
+          and my experience working with diverse groups of people are strengths
+          that I bring to all of my pursuits.
         </p>
         <br />
         <p>

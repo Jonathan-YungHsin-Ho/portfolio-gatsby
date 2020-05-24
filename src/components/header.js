@@ -13,10 +13,16 @@ const headerStyle = {
 }
 
 const navBarStyle = {
+  flexGrow: 1,
+  display: `flex`,
+  justifyContent: `flex-end`,
+  margin: `0.5rem 0 0`,
+}
+
+const navBarLinksStyle = {
   width: `30rem`,
   display: `flex`,
   justifyContent: `space-between`,
-  margin: `0.5rem 0 0`,
 }
 
 const Header = ({ name, title }) => (
@@ -27,17 +33,23 @@ const Header = ({ name, title }) => (
           to="/"
           style={{
             textDecoration: `none`,
+            display: `flex`,
+            flexWrap: `wrap`,
           }}
         >
-          {name} <span style={{ fontWeight: `normal` }}>{title}</span>
+          <span>{name}</span>
+          <span style={{ opacity: 0 }}>.</span>
+          <span style={{ fontWeight: `normal` }}>{title}</span>
         </Link>
       </h1>
     </div>
     <div style={navBarStyle}>
-      <Link to="/projects">Projects</Link>
-      <Link to="/skills">Skills</Link>
-      <Link to="/blog">Blog</Link>
-      <Link to="/contact">Contact</Link>
+      <div style={navBarLinksStyle}>
+        <Link to="/projects">Projects</Link>
+        <Link to="/skills">Skills</Link>
+        <Link to="/blog">Blog</Link>
+        <Link to="/contact">Contact</Link>
+      </div>
     </div>
   </header>
 )

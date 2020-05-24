@@ -32,16 +32,14 @@ const Layout = ({ children }) => {
       <Header name={name} title={title} />
       <div
         style={{
-          margin: `0 auto`,
-          paddingTop: `1.45rem`,
-          maxWidth: 960,
-          height: `calc(100vh - 125px)`,
-          overflow: `scroll`,
+          height: `calc(100vh - 156px)`,
           overflowX: `hidden`,
-          padding: `0 1.0875rem 1.45rem`,
+          padding: `0 1.0875rem 0`,
         }}
       >
-        <main>{children}</main>
+        <main style={{ margin: `0 auto`, maxWidth: 630, paddingTop: `2rem` }}>
+          {children}
+        </main>
       </div>
       <Footer />
     </>

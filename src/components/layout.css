@@ -50,7 +50,7 @@ h2 {
   color: inherit;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.62671rem;
+  font-size: 2rem;
   line-height: 1.1;
 }
 
@@ -88,9 +88,9 @@ textarea:focus {
 }
 
 button {
-  width: 13rem;
-  padding: 1rem;
-  margin-top: 0.5rem;
+  /* width: 13rem; */
+  padding: 1rem 2rem;
+  /* margin-top: 0.5rem; */
 
   /* border: none; */
   /* border-radius: 0.3rem; */

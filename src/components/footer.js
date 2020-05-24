@@ -1,4 +1,6 @@
 import React from "react"
+import { IoMdDocument } from "react-icons/io"
+import { FaLinkedinIn, FaGithub, FaTwitter, FaEnvelope } from "react-icons/fa"
 
 const footerStyle = {
   position: `absolute`,
@@ -25,35 +27,35 @@ const Footer = () => (
   <footer style={footerStyle}>
     <div style={footerLinksStyle}>
       <a href="/" target="_blank" rel="noopener noreferrer">
-        R
+        <IoMdDocument />
       </a>
       <a
         href="https://www.linkedin.com/in/jonathan-y-ho/"
         target="_blank"
         rel="noopener noreferrer"
       >
-        LI
+        <FaLinkedinIn />
       </a>
       <a
         href="href='https://github.com/Jonathan-YungHsin-Ho'"
         target="_blank"
         rel="noopener noreferrer"
       >
-        GH
+        <FaGithub />
       </a>
       <a
         href="https://twitter.com/JonathanHoDev"
         target="_blank"
         rel="noopener noreferrer"
       >
-        Tw
+        <FaTwitter />
       </a>
       <a
         href="mailto:jonathan.yunghsin.ho@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
       >
-        E
+        <FaEnvelope />
       </a>
     </div>
     <div style={footerCopyrightStyle}>
@@ -63,6 +65,7 @@ const Footer = () => (
         href="https://www.gatsbyjs.org"
         target="_blank"
         rel="noopener noreferrer"
+        style={{ textDecoration: "underline dotted" }}
       >
         Gatsby
       </a>

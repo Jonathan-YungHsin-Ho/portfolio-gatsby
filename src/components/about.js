@@ -5,14 +5,21 @@ import Image from "./image"
 const About = () => (
   <>
     <h2>About Me</h2>
-    <div>
+    <div style={{ display: `flex` }} className="about-me">
       <div
         style={{
-          maxWidth: `100px`,
-          marginBottom: `1.45rem`,
+          minWidth: `100px`,
+          marginRight: `0.75rem`,
         }}
       >
-        <Image />
+        <div
+          style={{
+            maxWidth: `100px`,
+            marginBottom: `1.45rem`,
+          }}
+        >
+          <Image />
+        </div>
       </div>
       <div>
         <p>

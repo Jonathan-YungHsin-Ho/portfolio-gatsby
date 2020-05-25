@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import ModeProvider from "../contexts/ModeContext"
 
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 export default ({ data }) => {
   const post = data.markdownRemark
@@ -11,6 +12,7 @@ export default ({ data }) => {
   return (
     <ModeProvider>
       <Layout>
+        <SEO title="Post" />
         <div>
           <h2>{post.frontmatter.title}</h2>
           <div>

@@ -248,6 +248,16 @@ button:hover:enabled {
   margin-bottom: 1rem;
 }
 
+.blog-post ul {
+  list-style-position: outside;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.blog-post a {
+  text-decoration: underline dotted;
+}
+
 /* Contact Page Styles */
 
 .contact-button-row {

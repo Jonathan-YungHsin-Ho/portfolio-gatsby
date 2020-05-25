@@ -15,6 +15,7 @@ export default function ModeProvider({ children }) {
 
 export function useModeContext() {
   const context = useContext(ModeContext)
+
   if (context === undefined) {
     throw new Error("useModeContext must be used within ModeProvider")
   }

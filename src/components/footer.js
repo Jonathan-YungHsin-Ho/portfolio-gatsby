@@ -50,40 +50,48 @@ const Footer = () => {
     <footer style={footerStyle}>
       <div style={footerLinksStyle}>
         <a href={Resume} target="_blank" rel="noopener noreferrer">
-          <IoMdDocument />
+          <IoMdDocument className="footer-icon" />
         </a>
         <a
           href="https://www.linkedin.com/in/jonathan-y-ho/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaLinkedinIn />
+          <FaLinkedinIn className="footer-icon" />
         </a>
         <a
           href="https://github.com/Jonathan-YungHsin-Ho"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaGithub />
+          <FaGithub className="footer-icon" />
         </a>
         <a
           href="https://twitter.com/JonathanHoDev"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaTwitter />
+          <FaTwitter className="footer-icon" />
         </a>
         <a
           href="mailto:jonathan.yunghsin.ho@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaEnvelope />
+          <FaEnvelope className="footer-icon" />
         </a>
         {darkMode ? (
-          <FiSun onClick={toggleMode} style={toggleStyle} />
+          <FiSun
+            onClick={toggleMode}
+            style={toggleStyle}
+            className="footer-icon"
+          />
         ) : (
-          <FiMoon onClick={toggleMode} style={toggleStyle} />
+          <FiMoon
+            onClick={toggleMode}
+            style={toggleStyle}
+            className="footer-icon"
+          />
         )}
       </div>
       <div style={footerCopyrightStyle}>
@@ -94,7 +102,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <GrGatsbyjs />
+          <GrGatsbyjs className="footer-icon" />
         </a>
       </div>
     </footer>

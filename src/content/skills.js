@@ -1,29 +1,47 @@
+import React from "react"
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJsSquare,
+  FaReact,
+  FaVuejs,
+  FaLess,
+  FaSass,
+  FaGit,
+  FaNodeJs,
+  FaPython,
+  FaAws,
+} from "react-icons/fa"
+import { GrGatsbyjs, GrGraphQl, GrHeroku } from "react-icons/gr"
+import { DiDjango } from "react-icons/di"
+
 export const skillsFrontEnd = [
   {
     category: "Fundamentals",
     skills: [
-      { icon: "html5", skill: "HTML5" },
-      { icon: "css3-alt", skill: "CSS3" },
-      { icon: "js-square", skill: "JavaScript 6" },
+      { icon: <FaHtml5 />, skill: "HTML5" },
+      { icon: <FaCss3Alt />, skill: "CSS3" },
+      { icon: <FaJsSquare />, skill: "JavaScript 6" },
     ],
   },
   {
     category: "Libraries/Frameworks",
     skills: [
-      { icon: "react", skill: "ReactJS (Hooks, Context API)" },
+      { icon: <FaReact />, skill: "ReactJS (Hooks, Context API)" },
       // { icon: 'react', skill: 'React Hooks' },
       // { icon: 'react', skill: 'Context API' },
+      { icon: <GrGatsbyjs />, skill: "Gatsby" },
       { svg: "redux", skill: "Redux" },
       { svg: "apollo", skill: "Apollo Client" },
-      { icon: "vuejs", skill: "Vue.js (Vue Router, Vuex)" },
+      { icon: <FaVuejs />, skill: "Vue.js (Vue Router, Vuex)" },
       // { icon: 'angular', skill: 'Angular' },
     ],
   },
   {
     category: "CSS Compilers",
     skills: [
-      { icon: "less", skill: "LESS" },
-      { icon: "sass", skill: "SASS/SCSS" },
+      { icon: <FaLess />, skill: "LESS" },
+      { icon: <FaSass />, skill: "SASS/SCSS" },
     ],
   },
   {
@@ -38,8 +56,8 @@ export const skillsFrontEnd = [
     category: "API Calls",
     skills: [
       { svg: "axios", skill: "Axios" },
-      { icon: "js-square", skill: "Fetch API" },
-      { svg: "graphql", skill: "GraphQL" },
+      { icon: <FaJsSquare />, skill: "Fetch API" },
+      { icon: <GrGraphQl />, skill: "GraphQL" },
     ],
   },
   {
@@ -52,7 +70,7 @@ export const skillsFrontEnd = [
   },
   {
     category: "Version Control",
-    skills: [{ icon: "git", skill: "Git" }],
+    skills: [{ icon: <FaGit />, skill: "Git" }],
   },
   {
     category: "Testing",
@@ -67,36 +85,36 @@ export const skillsBackEnd = [
   {
     category: "Fundamentals",
     skills: [
-      { icon: "node-js", skill: "Node.js" },
-      { icon: "python", skill: "Python" },
+      { icon: <FaNodeJs />, skill: "Node.js" },
+      { icon: <FaPython />, skill: "Python" },
       { skill: "REST" },
       { svg: "sql", skill: "SQL" },
-      { svg: "graphql", skill: "GraphQL" },
-      { icon: "aws", skill: "DynamoDB" },
+      { icon: <GrGraphQl />, skill: "GraphQL" },
+      { icon: <FaAws />, skill: "DynamoDB" },
     ],
   },
   {
     category: "Frameworks",
     skills: [
-      { icon: "node-js", skill: "Express" },
+      { icon: <FaNodeJs />, skill: "Express" },
       { svg: "knex", skill: "Knex" },
-      { svg: "graphql", skill: "GraphQL-Yoga" },
+      { icon: <GrGraphQl />, skill: "GraphQL-Yoga" },
       { svg: "apollo", skill: "Apollo Server (Gateway, Federation)" },
       { svg: "prisma", skill: "Prisma" },
       // { svg: 'apollo', skill: 'Apollo Gateway' },
       // { svg: 'apollo', skill: 'Apollo Federation' },
-      { svg: "django", skill: "Django" },
+      { icon: <DiDjango />, skill: "Django" },
     ],
   },
   {
     category: "Deployment",
-    skills: [{ svg: "heroku", skill: "Heroku" }],
+    skills: [{ icon: <GrHeroku />, skill: "Heroku" }],
   },
   {
     category: "Testing",
     skills: [
       { svg: "jest", skill: "Jest" },
-      { icon: "node-js", skill: "SuperTest" },
+      { icon: <FaNodeJs />, skill: "SuperTest" },
     ],
   },
 ]

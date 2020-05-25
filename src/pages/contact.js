@@ -1,7 +1,6 @@
 import React, { useState } from "react"
-
+import emailjs from "emailjs-com"
 import ModeProvider from "../contexts/ModeContext"
-
 import Layout from "../components/layout"
 
 export default () => {
@@ -25,7 +24,7 @@ export default () => {
     toEmail,
     user
   ) => {
-    window.emailjs
+    emailjs
       .send(
         "default_service",
         templateId,
@@ -45,15 +44,15 @@ export default () => {
 
   const handleSubmit = e => {
     e.preventDefault()
-    // console.log(message);
+    // console.log(message)
 
     sendFeedback(
-      process.env.REACT_APP_EMAILJS_TEMPLATEID,
+      process.env.GATSBY_EMAILJS_TEMPLATEID,
       message.name,
       message.email,
       message.message,
-      process.env.REACT_APP_EMAILJS_RECEIVER,
-      process.env.REACT_APP_EMAILJS_USERID
+      process.env.GATSBY_EMAILJS_RECEIVER,
+      process.env.GATSBY_EMAILJS_USERID
     )
   }
 

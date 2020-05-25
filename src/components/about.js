@@ -42,9 +42,10 @@ const About = () => (
         </p>
         <br />
         <p>
-          My interests in making things extend past the computer screen; I send
-          hand-drawn postcards when I travel, and I make hand-bound journals.
-          I'm currently working on a book about my experiences in education.
+          My interests in making things extend beyond the computer screen; I
+          send hand-drawn postcards when I travel, and I make hand-bound
+          journals. I'm currently working on a book about my experiences in
+          education.
         </p>
       </div>
     </div>

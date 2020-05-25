@@ -96,7 +96,7 @@ textarea {
   padding: 1rem;
 
   border: 1px solid silver;
-  border-radius: 0.3rem;
+  /* border-radius: 0.3rem; */
 
   font-family: inherit;
   outline: none;
@@ -195,6 +195,26 @@ button:hover:enabled {
 
 .thumbnail:hover {
   opacity: 0.5;
+}
+
+.project-image {
+  transition: opacity 0.2s;
+}
+
+.project-image:hover {
+  opacity: 0.8;
+}
+
+.project-field {
+  display: flex;
+  align-items: baseline;
+  margin-top: 1rem;
+  /* margin-bottom: 1rem; */
+}
+
+.project-field h3 {
+  margin-top: 0;
+  margin-right: 0.5rem;
 }
 
 /* Contact Page Styles */

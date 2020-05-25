@@ -1,6 +1,6 @@
 import React from "react"
 
-import Image from "./image"
+import Photo from "./photo"
 
 const About = () => (
   <>
@@ -18,7 +18,7 @@ const About = () => (
             marginBottom: `1.45rem`,
           }}
         >
-          <Image />
+          <Photo />
         </div>
       </div>
       <div>

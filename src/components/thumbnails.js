@@ -20,7 +20,7 @@ const Thumbnails = ({
     justifyContent: `space-between`,
     alignItems: `center`,
     width: `30rem`,
-    margin: `4rem auto 0`,
+    margin: `1rem auto`,
   }
 
   const arrowStyle = {
@@ -37,6 +37,7 @@ const Thumbnails = ({
           className="thumbnail"
           style={{
             backgroundColor: project.thumbnail,
+            borderRadius: 0,
             border:
               project.number === num &&
               (darkMode
@@ -45,6 +46,9 @@ const Thumbnails = ({
           }}
           key={project.number}
           onClick={() => handleSelect(project.number)}
+          role="button"
+          tabIndex="0"
+          aria-label="Select project"
         ></div>
       ))}
       <FaCaretRight onClick={handleNext} style={arrowStyle} />

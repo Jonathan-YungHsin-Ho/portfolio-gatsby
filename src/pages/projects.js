@@ -4,6 +4,7 @@ import ModeProvider from "../contexts/ModeContext"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Project from "../components/project"
 import Thumbnails from "../components/thumbnails"
 
 import { projects } from "../content/projects"
@@ -42,6 +43,7 @@ const ProjectsPage = () => {
           handleNext={handleNext}
           num={project.number}
         />
+        <Project project={project} />
       </Layout>
     </ModeProvider>
   )

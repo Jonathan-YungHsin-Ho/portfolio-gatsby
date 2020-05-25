@@ -7,8 +7,6 @@ export default function Skill({ skill }) {
     mode: { darkMode },
   } = useModeContext()
 
-  console.log(skill.svg)
-
   return (
     <div className="skill-row" style={{ display: `flex` }}>
       <span

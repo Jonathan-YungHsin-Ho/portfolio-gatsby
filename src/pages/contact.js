@@ -1,7 +1,10 @@
 import React, { useState } from "react"
 import emailjs from "emailjs-com"
+
 import ModeProvider from "../contexts/ModeContext"
+
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 export default () => {
   const [message, setMessage] = useState({
@@ -59,6 +62,7 @@ export default () => {
   return (
     <ModeProvider>
       <Layout>
+        <SEO title="Contact" />
         <div className="panel-centered">
           <section className="contact-page">
             <h2>Get In Touch</h2>

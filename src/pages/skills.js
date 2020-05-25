@@ -1,25 +1,35 @@
 import React from "react"
+
 import ModeProvider from "../contexts/ModeContext"
+
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 import SkillCategory from "../components/skillCategory"
+
 import { skillsFrontEnd, skillsBackEnd } from "../content/skills"
+
+const skillsCategoryStyle = {
+  display: `flex`,
+  flexWrap: `wrap`,
+}
 
 const SkillsPage = () => (
   <ModeProvider>
     <Layout>
+      <SEO title="Skills" />
       <h2>Skills & Tech Stack</h2>
-      <div className="skills-content">
-        <div className="skills-block">
+      <div>
+        <div>
           <h3>Front-End</h3>
-          <div className="skills-categories">
+          <div style={skillsCategoryStyle}>
             {skillsFrontEnd.map((category, index) => (
               <SkillCategory key={index} category={category} />
             ))}
           </div>
         </div>
-        <div className="skills-block">
+        <div>
           <h3>Back-End</h3>
-          <div className="skills-categories">
+          <div style={skillsCategoryStyle}>
             {skillsBackEnd.map((category, index) => (
               <SkillCategory key={index} category={category} />
             ))}

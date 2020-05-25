@@ -14,7 +14,7 @@ const Footer = () => {
     position: `absolute`,
     bottom: 0,
     right: 0,
-    padding: `1.5rem 3rem 1rem`,
+    padding: `1.5rem 1.5rem 1rem`,
     display: `flex`,
     flexDirection: `column`,
     alignItems: `center`,

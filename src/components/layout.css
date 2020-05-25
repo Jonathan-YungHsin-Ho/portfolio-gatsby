@@ -168,6 +168,19 @@ button:hover:enabled {
   border: 1px solid var(--dark-color);
 }
 
+/* Contact Page Styles */
+
+.contact-button-row {
+  display: flex;
+  align-items: center;
+}
+
+.message-feedback {
+  margin-left: 2rem;
+}
+
+/* Footer Styles */
+
 .footer-icon {
   color: var(--dark-color);
   transition: color 0.2s;
@@ -183,6 +196,8 @@ button:hover:enabled {
     flex-wrap: wrap;
   }
 }
+
+/* Dark Mode Styles */
 
 .dark-mode {
   background-color: var(--dark-color);

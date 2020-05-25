@@ -36,6 +36,7 @@ const Footer = () => {
     fontSize: `1.1rem`,
   }
 
+  // if (typeof window !== `undefined`) {
   const [darkMode, setDarkMode] = useDarkMode(false)
 
   const { dispatch } = useModeContext()
@@ -107,6 +108,9 @@ const Footer = () => {
       </div>
     </footer>
   )
+  // }
+
+  // return null
 }
 
 export default Footer

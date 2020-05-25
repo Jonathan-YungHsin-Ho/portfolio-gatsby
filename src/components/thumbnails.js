@@ -29,6 +29,8 @@ const Thumbnails = ({
     color: darkMode ? `rgba(255, 255, 255, 0.87)` : `#121212`,
   }
 
+  const handleKey = () => {}
+
   return (
     <div style={thumbnailWrapperStyle}>
       <FaCaretLeft onClick={handlePrev} style={arrowStyle} />
@@ -46,6 +48,7 @@ const Thumbnails = ({
           }}
           key={project.number}
           onClick={() => handleSelect(project.number)}
+          onKeyDown={handleKey}
           role="button"
           tabIndex="0"
           aria-label="Select project"

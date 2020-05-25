@@ -3,6 +3,7 @@ import { useLocalStorage } from "./useLocalStorage"
 import { useModeContext } from "../contexts/ModeContext"
 
 export const useDarkMode = initialValue => {
+  // if (typeof window !== `undefined`) {
   const [darkMode, setDarkMode] = useLocalStorage("darkModeKey", initialValue)
   const { dispatch } = useModeContext()
 
@@ -16,4 +17,5 @@ export const useDarkMode = initialValue => {
   }, [darkMode, dispatch])
 
   return [darkMode, setDarkMode]
+  // }
 }

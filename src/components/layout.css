@@ -205,6 +205,20 @@ button:hover:enabled {
   opacity: 0.8;
 }
 
+.project-link {
+  margin-right: 2rem;
+  flex-shrink: 0;
+}
+
+.project-link a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.project-link:hover {
+  color: var(--hover-color);
+}
 .project-field {
   display: flex;
   align-items: baseline;

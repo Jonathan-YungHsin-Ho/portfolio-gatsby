@@ -49,7 +49,7 @@ const Project = ({ project }) => {
             ))}
           <div className="project-responsibilities">
             {project.responsibilities && <h3>Responsibilities:</h3>}
-            <ul style={{ listStylePosition: `inside` }}>
+            <ul style={{ listStylePosition: `outside`, paddingLeft: `2rem` }}>
               {project.responsibilities?.map((responsibility, index) => (
                 <li key={index}>{responsibility}</li>
               ))}

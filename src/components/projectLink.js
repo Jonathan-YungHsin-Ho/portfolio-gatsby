@@ -2,7 +2,7 @@ import React from "react"
 
 const ProjectLink = ({ link }) => {
   return (
-    <div style={{ marginRight: `2rem`, flexShrink: 0 }}>
+    <div className="project-link">
       <a
         href={link.url}
         target="_blank"

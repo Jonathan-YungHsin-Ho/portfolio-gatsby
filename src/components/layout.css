@@ -183,6 +183,20 @@ button:hover:enabled {
   border: 1px solid var(--dark-color);
 }
 
+/* Project Page Styles */
+
+.thumbnail {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.thumbnail:hover {
+  opacity: 0.5;
+}
+
 /* Contact Page Styles */
 
 .contact-button-row {

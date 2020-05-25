@@ -2,6 +2,7 @@ import React from "react"
 
 import Apollo from "./Apollo"
 import Axios from "./Axios"
+import Django from "./Django"
 import Jest from "./Jest"
 import Knex from "./Knex"
 import Netlify from "./Netlify"
@@ -16,6 +17,8 @@ const Icon = props => {
       return <Apollo {...props} />
     case "axios":
       return <Axios {...props} />
+    case "django":
+      return <Django {...props} />
     case "jest":
       return <Jest {...props} />
     case "knex":

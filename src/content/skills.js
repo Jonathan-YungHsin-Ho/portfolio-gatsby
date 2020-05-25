@@ -13,7 +13,6 @@ import {
   FaAws,
 } from "react-icons/fa"
 import { GrGatsbyjs, GrGraphQl, GrHeroku } from "react-icons/gr"
-import { DiDjango } from "react-icons/di"
 
 export const skillsFrontEnd = [
   {
@@ -103,7 +102,7 @@ export const skillsBackEnd = [
       { svg: "prisma", skill: "Prisma" },
       // { svg: 'apollo', skill: 'Apollo Gateway' },
       // { svg: 'apollo', skill: 'Apollo Federation' },
-      { icon: <DiDjango />, skill: "Django" },
+      { svg: "django", skill: "Django" },
     ],
   },
   {

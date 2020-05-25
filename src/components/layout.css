@@ -231,6 +231,23 @@ button:hover:enabled {
   margin-right: 0.5rem;
 }
 
+/* Blog Styles */
+.blog-post {
+  margin-top: 1rem;
+  border-top: 1px dotted silver;
+  padding-top: 1.5rem;
+}
+
+.blog-post h1,
+.blog-post h2,
+.blog-post h3 {
+  text-transform: none;
+}
+
+.blog-post p {
+  margin-bottom: 1rem;
+}
+
 /* Contact Page Styles */
 
 .contact-button-row {

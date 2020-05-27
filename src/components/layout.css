@@ -175,7 +175,7 @@ button:hover:enabled {
 }
 
 .nav-bar-links a:hover {
-  text-shadow: 0 0 0.7px var(--dark-color), 0 0 0.7px var(--dark-color);
+  text-shadow: 0 0 0.1px var(--dark-color);
 }
 
 .layout-container {

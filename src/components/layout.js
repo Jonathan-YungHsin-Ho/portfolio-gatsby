@@ -31,8 +31,12 @@ const Layout = ({ children }) => {
     <>
       <Header name={name} title={title} />
       <div
+        className="layout-container"
         style={{
           height: `calc(100vh - 156px)`,
+          // height: `100vh`,
+          // marginTop: `-156px`,
+          // paddingTop: `156px`,
           overflowX: `hidden`,
           padding: `0 1.0875rem 0`,
         }}

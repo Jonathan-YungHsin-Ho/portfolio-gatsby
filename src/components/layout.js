@@ -37,10 +37,10 @@ const Layout = ({ children }) => {
   }
 
   return (
-    <>
+    <div className="layout-container">
       <Header name={name} title={title} />
       <div
-        className="layout-container"
+        className="main-wrapper"
         // style={{
         //   height: `calc(var(--vh, 1vh) * 100 - 156px)`,
         //   overflowX: `hidden`,
@@ -59,7 +59,7 @@ const Layout = ({ children }) => {
         </main>
       </div>
       <Footer />
-    </>
+    </div>
   )
 }
 

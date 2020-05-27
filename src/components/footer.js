@@ -10,10 +10,17 @@ import { useModeContext } from "../contexts/ModeContext"
 import Resume from "../documents/resume.pdf"
 
 const Footer = () => {
+  const footerWrapperStyle = {
+    display: `flex`,
+    flexDirection: `column`,
+    alignItems: `flex-end`,
+    // border: `2px solid orange`,
+  }
+
   const footerStyle = {
-    position: `absolute`,
-    bottom: 0,
-    right: 0,
+    // position: `absolute`,
+    // bottom: 0,
+    // right: 0,
     padding: `1.5rem 1.5rem 1rem`,
     display: `flex`,
     flexDirection: `column`,
@@ -48,63 +55,65 @@ const Footer = () => {
   }
 
   return (
-    <footer style={footerStyle}>
-      <div style={footerLinksStyle}>
-        <a href={Resume} target="_blank" rel="noopener noreferrer">
-          <IoMdDocument className="footer-icon" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/jonathan-y-ho/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaLinkedinIn className="footer-icon" />
-        </a>
-        <a
-          href="https://github.com/Jonathan-YungHsin-Ho"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGithub className="footer-icon" />
-        </a>
-        <a
-          href="https://twitter.com/JonathanHoDev"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaTwitter className="footer-icon" />
-        </a>
-        <a
-          href="mailto:jonathan.yunghsin.ho@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaEnvelope className="footer-icon" />
-        </a>
-        {darkMode ? (
-          <FiSun
-            onClick={toggleMode}
-            style={toggleStyle}
-            className="footer-icon"
-          />
-        ) : (
-          <FiMoon
-            onClick={toggleMode}
-            style={toggleStyle}
-            className="footer-icon"
-          />
-        )}
-      </div>
-      <div style={footerCopyrightStyle}>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a
-          href="https://www.gatsbyjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <GrGatsbyjs className="footer-icon" />
-        </a>
+    <footer style={footerWrapperStyle}>
+      <div style={footerStyle}>
+        <div style={footerLinksStyle}>
+          <a href={Resume} target="_blank" rel="noopener noreferrer">
+            <IoMdDocument className="footer-icon" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jonathan-y-ho/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedinIn className="footer-icon" />
+          </a>
+          <a
+            href="https://github.com/Jonathan-YungHsin-Ho"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub className="footer-icon" />
+          </a>
+          <a
+            href="https://twitter.com/JonathanHoDev"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaTwitter className="footer-icon" />
+          </a>
+          <a
+            href="mailto:jonathan.yunghsin.ho@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaEnvelope className="footer-icon" />
+          </a>
+          {darkMode ? (
+            <FiSun
+              onClick={toggleMode}
+              style={toggleStyle}
+              className="footer-icon"
+            />
+          ) : (
+            <FiMoon
+              onClick={toggleMode}
+              style={toggleStyle}
+              className="footer-icon"
+            />
+          )}
+        </div>
+        <div style={footerCopyrightStyle}>
+          © {new Date().getFullYear()}, Built with
+          {` `}
+          <a
+            href="https://www.gatsbyjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <GrGatsbyjs className="footer-icon" />
+          </a>
+        </div>
       </div>
     </footer>
   )

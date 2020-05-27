@@ -27,13 +27,22 @@ const Layout = ({ children }) => {
   const name = "Jonathan Yung-Hsin Ho"
   const title = "Software Engineer"
 
+  let vh
+
+  if (typeof window !== `undefined`) {
+    window.addEventListener("resize", () => {
+      vh = window.innerHeight * 0.01
+      document.documentElement.style.setProperty("--vh", `${vh}px`)
+    })
+  }
+
   return (
     <>
       <Header name={name} title={title} />
       <div
         className="layout-container"
         style={{
-          height: `calc(100vh - 156px)`,
+          height: `calc(var(--vh, 1vh) * 100 - 156px)`,
           // height: `100vh`,
           // marginTop: `-156px`,
           // paddingTop: `156px`,

@@ -178,6 +178,16 @@ button:hover:enabled {
   text-shadow: 0 0 0.7px var(--dark-color), 0 0 0.7px var(--dark-color);
 }
 
+.layout-container {
+  height: -webkit-calc(var(--vh, 1vh) * 100 - 156px);
+  height: -moz-calc(var(--vh, 1vh) * 100 - 156px);
+  height: calc(var(--vh, 1vh) * 100 - 156px);
+  overflow-x: hidden;
+  padding: 0 1.0875rem 0;
+}
+
+/* About Page Styles */
+
 .landing-line {
   margin: 10rem 0 10rem;
   height: 9rem;

@@ -12,7 +12,7 @@ const Header = ({ name, title }) => {
   const activeStyle = {
     textShadow: darkMode
       ? `0 0 1px var(--light-color), 0 0 1px var(--light-color)`
-      : `0 0 0.375px var(--dark-color)`,
+      : `0 0 0.1px var(--dark-color)`,
   }
 
   return (

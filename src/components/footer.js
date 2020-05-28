@@ -14,7 +14,6 @@ const Footer = () => {
     display: `flex`,
     flexDirection: `column`,
     alignItems: `flex-end`,
-    // border: `2px solid orange`,
   }
 
   const footerStyle = {

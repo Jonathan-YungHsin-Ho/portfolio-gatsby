@@ -2,17 +2,18 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-import { useModeContext } from "../contexts/ModeContext"
+// import { useModeContext } from "../contexts/ModeContext"
 
 const Header = ({ name, title }) => {
-  const {
-    mode: { darkMode },
-  } = useModeContext()
+  // const {
+  //   mode: { darkMode },
+  // } = useModeContext()
 
   const activeStyle = {
-    textShadow: darkMode
-      ? `0 0 1px var(--light-color), 0 0 1px var(--light-color)`
-      : `0 0 0.1px var(--dark-color)`,
+    fontWeight: `bold`,
+    // textShadow: darkMode
+    //   ? `0 0 1px var(--light-color), 0 0 1px var(--light-color)`
+    //   : `0 0 0.1px var(--dark-color)`,
   }
 
   return (

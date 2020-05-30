@@ -5,19 +5,9 @@ import Photo from "./photo"
 const About = () => (
   <>
     <h2>About Me</h2>
-    <div style={{ display: `flex` }} className="about-me">
-      <div
-        style={{
-          minWidth: `100px`,
-          marginRight: `0.75rem`,
-        }}
-      >
-        <div
-          style={{
-            maxWidth: `100px`,
-            marginBottom: `1.45rem`,
-          }}
-        >
+    <div className="about-me">
+      <div className="about-photo-wrapper-1">
+        <div className="about-photo-wrapper-2">
           <Photo />
         </div>
       </div>

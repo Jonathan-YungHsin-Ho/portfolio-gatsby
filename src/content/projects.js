@@ -9,6 +9,8 @@ import { ImageGitHired } from "../components/imageGitHired"
 import { ImageBrewery } from "../components/imageBrewery"
 import { FaYoutube, FaGithub } from "react-icons/fa"
 
+const iconStyle = { fontSize: `1.8rem`, marginRight: `0.5rem` }
+
 export const projects = [
   {
     number: 1,
@@ -48,23 +50,17 @@ export const projects = [
     site: "https://explorequality.com/",
     links: [
       {
-        icon: (
-          <FaYoutube style={{ fontSize: `1.8rem`, marginRight: `0.5rem` }} />
-        ),
+        icon: <FaYoutube style={iconStyle} />,
         text: "Demo",
         url: "https://youtu.be/mW-hJxlnVwk?t=274",
       },
       {
-        icon: (
-          <FaYoutube style={{ fontSize: `1.8rem`, marginRight: `0.5rem` }} />
-        ),
+        icon: <FaYoutube style={iconStyle} />,
         text: "Marketing",
         url: "https://youtu.be/xksru1VUZd0",
       },
       {
-        icon: (
-          <FaGithub style={{ fontSize: `1.8rem`, marginRight: `0.5rem` }} />
-        ),
+        icon: <FaGithub style={iconStyle} />,
         text: "Code",
         url: "https://github.com/TheCovey",
       },
@@ -103,16 +99,12 @@ export const projects = [
     site: "https://icnst.netlify.com/",
     links: [
       {
-        icon: (
-          <FaGithub style={{ fontSize: `1.8rem`, marginRight: `0.5rem` }} />
-        ),
+        icon: <FaGithub style={iconStyle} />,
         text: "Front-End Code",
         url: "https://github.com/ICNST/FE/tree/jonathan-ho",
       },
       {
-        icon: (
-          <FaGithub style={{ fontSize: `1.8rem`, marginRight: `0.5rem` }} />
-        ),
+        icon: <FaGithub style={iconStyle} />,
         text: "Back-End Code",
         url: "https://github.com/Jonathan-YungHsin-Ho/bw3-backend",
       },
@@ -146,16 +138,12 @@ export const projects = [
     site: "https://rfl.netlify.com/",
     links: [
       {
-        icon: (
-          <FaYoutube style={{ fontSize: `1.8rem`, marginRight: `0.5rem` }} />
-        ),
+        icon: <FaYoutube style={iconStyle} />,
         text: "Demo",
         url: "https://youtu.be/GQoPMRK_eyU?t=250",
       },
       {
-        icon: (
-          <FaGithub style={{ fontSize: `1.8rem`, marginRight: `0.5rem` }} />
-        ),
+        icon: <FaGithub style={iconStyle} />,
         text: "Code",
         url: "https://github.com/RideforLife/",
       },
@@ -191,23 +179,17 @@ export const projects = [
     site: "https://teamjam.netlify.com/",
     links: [
       {
-        icon: (
-          <FaYoutube style={{ fontSize: `1.8rem`, marginRight: `0.5rem` }} />
-        ),
+        icon: <FaYoutube style={iconStyle} />,
         text: "Demo 1",
         url: "https://youtu.be/Tmc3t5Y7Hhs?t=1044",
       },
       {
-        icon: (
-          <FaYoutube style={{ fontSize: `1.8rem`, marginRight: `0.5rem` }} />
-        ),
+        icon: <FaYoutube style={iconStyle} />,
         text: "Demo 2",
         url: "https://youtu.be/4Sdw_SOQ4HU",
       },
       {
-        icon: (
-          <FaGithub style={{ fontSize: `1.8rem`, marginRight: `0.5rem` }} />
-        ),
+        icon: <FaGithub style={iconStyle} />,
         text: "Code",
         url: "https://github.com/Team-JAM/",
       },
@@ -244,16 +226,12 @@ export const projects = [
     site: "https://lambdalegend.netlify.com/",
     links: [
       {
-        icon: (
-          <FaYoutube style={{ fontSize: `1.8rem`, marginRight: `0.5rem` }} />
-        ),
+        icon: <FaYoutube style={iconStyle} />,
         text: "Demo",
         url: "https://youtu.be/Y3tNF6Y1f0k?t=28",
       },
       {
-        icon: (
-          <FaGithub style={{ fontSize: `1.8rem`, marginRight: `0.5rem` }} />
-        ),
+        icon: <FaGithub style={iconStyle} />,
         text: "Code",
         url: "https://github.com/CS25-BuildWeek-JJTBN/",
       },
@@ -287,16 +265,12 @@ export const projects = [
     site: "https://createadventure.netlify.com/",
     links: [
       {
-        icon: (
-          <FaYoutube style={{ fontSize: `1.8rem`, marginRight: `0.5rem` }} />
-        ),
+        icon: <FaYoutube style={iconStyle} />,
         text: "Marketing",
         url: "https://youtu.be/aXe9Fm_1oUg",
       },
       {
-        icon: (
-          <FaGithub style={{ fontSize: `1.8rem`, marginRight: `0.5rem` }} />
-        ),
+        icon: <FaGithub style={iconStyle} />,
         text: "Code",
         url: "https://github.com/Lambda-Hackathon-2020-Git-Adventure/",
       },
@@ -318,9 +292,7 @@ export const projects = [
     site: "https://git-hired.netlify.com/",
     links: [
       {
-        icon: (
-          <FaGithub style={{ fontSize: `1.8rem`, marginRight: `0.5rem` }} />
-        ),
+        icon: <FaGithub style={iconStyle} />,
         text: "Code",
         url:
           "https://github.com/Jonathan-YungHsin-Ho/React-Redux-App/tree/jonathan-ho/github-jobs",
@@ -342,9 +314,7 @@ export const projects = [
     site: "https://findabrewery.netlify.com/",
     links: [
       {
-        icon: (
-          <FaGithub style={{ fontSize: `1.8rem`, marginRight: `0.5rem` }} />
-        ),
+        icon: <FaGithub style={iconStyle} />,
         text: "Code",
         url: "https://github.com/Jonathan-YungHsin-Ho/open-brewery-app",
       },

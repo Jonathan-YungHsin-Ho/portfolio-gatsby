@@ -34,8 +34,7 @@ export default () => {
         { fromName, fromEmail, message, toEmail },
         user
       )
-      .then(res => {
-        // console.log(res);
+      .then(_res => {
         setFeedback("Your message was successfully sent!")
         setMessage({ name: "", email: "", message: "" })
       })
@@ -47,7 +46,6 @@ export default () => {
 
   const handleSubmit = e => {
     e.preventDefault()
-    // console.log(message)
 
     sendFeedback(
       process.env.GATSBY_EMAILJS_TEMPLATEID,
@@ -63,8 +61,8 @@ export default () => {
     <ModeProvider>
       <Layout>
         <SEO title="Contact" />
-        <div className="panel-centered">
-          <section className="contact-page">
+        <div>
+          <section>
             <h2>Get In Touch</h2>
             <p>
               Feel free to reach out if you'd like to discuss collaboration or
@@ -90,7 +88,7 @@ export default () => {
               <textarea
                 name="message"
                 placeholder="Message"
-                rows="9"
+                rows="8"
                 value={message.message}
                 onChange={handleChange}
                 aria-label="Input message"
@@ -104,8 +102,8 @@ export default () => {
                   <button disabled>Send Message</button>
                 )}
                 <div className="message-feedback">
-                  <span style={{ color: "green" }}>{feedback}</span>
-                  <span style={{ color: "red" }}>{error}</span>
+                  <span className="green">{feedback}</span>
+                  <span className="red">{error}</span>
                 </div>
               </div>
             </form>

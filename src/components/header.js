@@ -2,35 +2,19 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-// import { useModeContext } from "../contexts/ModeContext"
-
 const Header = ({ name, title }) => {
-  // const {
-  //   mode: { darkMode },
-  // } = useModeContext()
-
   const activeStyle = {
     fontWeight: `bold`,
-    // textShadow: darkMode
-    //   ? `0 0 1px var(--light-color), 0 0 1px var(--light-color)`
-    //   : `0 0 0.1px var(--dark-color)`,
   }
 
   return (
     <header>
       <div>
-        <h1 style={{ margin: 0 }}>
-          <Link
-            to="/"
-            style={{
-              textDecoration: `none`,
-              display: `flex`,
-              flexWrap: `wrap`,
-            }}
-          >
+        <h1>
+          <Link to="/" className="nav-home">
             <span>{name}</span>
-            <span style={{ opacity: 0 }}>.</span>
-            <span style={{ fontWeight: `normal` }}>{title}</span>
+            <span className="clear">.</span>
+            <span className="normal-weight">{title}</span>
           </Link>
         </h1>
       </div>

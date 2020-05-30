@@ -15,31 +15,20 @@ const Thumbnails = ({
     mode: { darkMode },
   } = useModeContext()
 
-  const thumbnailWrapperStyle = {
-    display: `flex`,
-    justifyContent: `space-between`,
-    alignItems: `center`,
-    width: `30rem`,
-    margin: `1rem auto`,
-  }
-
   const arrowStyle = {
-    fontSize: `2rem`,
-    cursor: `pointer`,
     color: darkMode ? `rgba(255, 255, 255, 0.87)` : `#121212`,
   }
 
   const handleKey = () => {}
 
   return (
-    <div style={thumbnailWrapperStyle}>
-      <FaCaretLeft onClick={handlePrev} style={arrowStyle} />
+    <div className="thumbnail-wrapper">
+      <FaCaretLeft onClick={handlePrev} style={arrowStyle} className="arrow" />
       {projects.map(project => (
         <div
           className="thumbnail"
           style={{
             backgroundColor: project.thumbnail,
-            borderRadius: 0,
             border:
               project.number === num &&
               (darkMode
@@ -54,7 +43,7 @@ const Thumbnails = ({
           aria-label="Select project"
         ></div>
       ))}
-      <FaCaretRight onClick={handleNext} style={arrowStyle} />
+      <FaCaretRight onClick={handleNext} style={arrowStyle} className="arrow" />
     </div>
   )
 }

@@ -8,11 +8,6 @@ import SkillCategory from "../components/skillCategory"
 
 import { skillsFrontEnd, skillsBackEnd } from "../content/skills"
 
-const skillsCategoryStyle = {
-  display: `flex`,
-  flexWrap: `wrap`,
-}
-
 const SkillsPage = () => (
   <ModeProvider>
     <Layout>
@@ -21,7 +16,7 @@ const SkillsPage = () => (
       <div>
         <div>
           <h3>Front-End</h3>
-          <div style={skillsCategoryStyle}>
+          <div className="skills-category">
             {skillsFrontEnd.map((category, index) => (
               <SkillCategory key={index} category={category} />
             ))}
@@ -29,7 +24,7 @@ const SkillsPage = () => (
         </div>
         <div>
           <h3>Back-End</h3>
-          <div style={skillsCategoryStyle}>
+          <div className="skills-category">
             {skillsBackEnd.map((category, index) => (
               <SkillCategory key={index} category={category} />
             ))}

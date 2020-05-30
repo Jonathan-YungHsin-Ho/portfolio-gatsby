@@ -10,39 +10,6 @@ import { useModeContext } from "../contexts/ModeContext"
 import Resume from "../documents/resume.pdf"
 
 const Footer = () => {
-  const footerWrapperStyle = {
-    display: `flex`,
-    flexDirection: `column`,
-    alignItems: `flex-end`,
-  }
-
-  const footerStyle = {
-    // position: `absolute`,
-    // bottom: 0,
-    // right: 0,
-    padding: `1.5rem 1.5rem 1rem`,
-    display: `flex`,
-    flexDirection: `column`,
-    alignItems: `center`,
-  }
-
-  const footerLinksStyle = {
-    width: `32rem`,
-    display: `flex`,
-    justifyContent: `space-between`,
-    fontSize: "2rem",
-  }
-
-  const toggleStyle = {
-    cursor: "pointer",
-  }
-
-  const footerCopyrightStyle = {
-    marginTop: `0.5rem`,
-    fontSize: `1.1rem`,
-  }
-
-  // if (typeof window !== `undefined`) {
   const [darkMode, setDarkMode] = useDarkMode(false)
 
   const { dispatch } = useModeContext()
@@ -54,9 +21,9 @@ const Footer = () => {
   }
 
   return (
-    <footer style={footerWrapperStyle}>
-      <div style={footerStyle}>
-        <div style={footerLinksStyle}>
+    <footer className="footer-wrapper">
+      <div className="footer">
+        <div className="footer-links">
           <a href={Resume} target="_blank" rel="noopener noreferrer">
             <IoMdDocument className="footer-icon" />
           </a>
@@ -89,20 +56,15 @@ const Footer = () => {
             <FaEnvelope className="footer-icon" />
           </a>
           {darkMode ? (
-            <FiSun
-              onClick={toggleMode}
-              style={toggleStyle}
-              className="footer-icon"
-            />
+            <FiSun onClick={toggleMode} className="footer-icon footer-toggle" />
           ) : (
             <FiMoon
               onClick={toggleMode}
-              style={toggleStyle}
-              className="footer-icon"
+              className="footer-icon footer-toggle"
             />
           )}
         </div>
-        <div style={footerCopyrightStyle}>
+        <div className="footer-copyright">
           © {new Date().getFullYear()}, Built with
           {` `}
           <a
@@ -116,9 +78,6 @@ const Footer = () => {
       </div>
     </footer>
   )
-  // }
-
-  // return null
 }
 
 export default Footer

@@ -10,7 +10,7 @@ I'd been wanting to create a personal blog and to build a [Gatsby](https://www.g
 
 Fortunately, my familiarity and experience with the React ecosystem and GraphQL along with Gatsby's excellent docs made this more straightforward than I had anticipated. (Of course, I did run into issues with building and deploying to Netlify. Let's just say that capitals are important.) In the process, I did simplify my portfolio site design some, mainly to avoid some of the complicated media queries I had in my previous version. I'd also gotten some feedback regarding the horizontal scrollbars, so I shifted to a more conventional vertical scrolling design for the Projects and Skills pages.
 
-My primary goal for this blog is to document my studies and personal projects as I embark on my software engineering career. One of the things I love about tech is the never-ending list of things to learn. Here's a list of some of the topics I'm currently tackling:
+My primary goal for this blog is to document my studies and personal projects as I embark on my software engineering career. One of the things I appreciate most about tech is the never-ending list of things to learn. Here's a list of some of the topics I'm currently tackling:
 
 - ReactJS
 - Vue.js

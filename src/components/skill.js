@@ -8,7 +8,7 @@ export default function Skill({ skill }) {
   } = useModeContext()
 
   return (
-    <div className="skill-row" style={{ display: `flex` }}>
+    <div className="skill-row">
       <span
         style={{
           fontSize: `2rem`,

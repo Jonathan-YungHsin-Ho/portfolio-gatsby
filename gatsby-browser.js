@@ -7,10 +7,12 @@
 // You can delete this file if you're not using it
 
 import React from "react"
-import Div100vh from "react-div-100vh"
+// import Div100vh from "react-div-100vh"
+import { VisualViewport } from "./src/components/visualViewport"
 
 export const wrapPageElement = ({ element }) => {
-  return <Div100vh>{element}</Div100vh>
+  // return <Div100vh>{element}</Div100vh>
+  return <VisualViewport>{element}</VisualViewport>
 }
 
 // const React = require("react")

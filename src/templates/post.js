@@ -10,22 +10,24 @@ export default ({ data }) => {
   const post = data.markdownRemark
 
   return (
-    <ModeProvider>
-      <Layout>
-        <SEO title="Post" />
-        <div>
-          <h2>{post.frontmatter.title}</h2>
+    <>
+      <ModeProvider>
+        <Layout>
+          <SEO title="Post" />
           <div>
-            {post.frontmatter.date} - {post.fields.readingTime.text} (
-            {post.fields.readingTime.words} words)
+            <h2>{post.frontmatter.title}</h2>
+            <div>
+              {post.frontmatter.date} - {post.fields.readingTime.text} (
+              {post.fields.readingTime.words} words)
+            </div>
+            <div
+              dangerouslySetInnerHTML={{ __html: post.html }}
+              className="blog-post"
+            ></div>
           </div>
-          <div
-            dangerouslySetInnerHTML={{ __html: post.html }}
-            className="blog-post"
-          ></div>
-        </div>
-      </Layout>
-    </ModeProvider>
+        </Layout>
+      </ModeProvider>
+    </>
   )
 }
 

@@ -58,58 +58,60 @@ export default () => {
   }
 
   return (
-    <ModeProvider>
-      <Layout>
-        <SEO title="Contact" />
-        <div>
-          <section>
-            <h2>Get In Touch</h2>
-            <p>
-              Feel free to reach out if you'd like to discuss collaboration or
-              other opportunities.
-            </p>
-            <form onSubmit={handleSubmit}>
-              <input
-                type="text"
-                name="name"
-                placeholder="Name"
-                value={message.name}
-                onChange={handleChange}
-                aria-label="Input name"
-              />
-              <input
-                type="text"
-                name="email"
-                placeholder="Email"
-                value={message.email}
-                onChange={handleChange}
-                aria-label="Input email"
-              />
-              <textarea
-                name="message"
-                placeholder="Message"
-                rows="8"
-                value={message.message}
-                onChange={handleChange}
-                aria-label="Input message"
-              />
-              <div className="contact-button-row">
-                {message.name !== "" &&
-                message.email !== "" &&
-                message.message !== "" ? (
-                  <button>Send Message</button>
-                ) : (
-                  <button disabled>Send Message</button>
-                )}
-                <div className="message-feedback">
-                  <span className="green">{feedback}</span>
-                  <span className="red">{error}</span>
+    <>
+      <ModeProvider>
+        <Layout>
+          <SEO title="Contact" />
+          <div>
+            <section>
+              <h2>Get In Touch</h2>
+              <p>
+                Feel free to reach out if you'd like to discuss collaboration or
+                other opportunities.
+              </p>
+              <form onSubmit={handleSubmit}>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  value={message.name}
+                  onChange={handleChange}
+                  aria-label="Input name"
+                />
+                <input
+                  type="text"
+                  name="email"
+                  placeholder="Email"
+                  value={message.email}
+                  onChange={handleChange}
+                  aria-label="Input email"
+                />
+                <textarea
+                  name="message"
+                  placeholder="Message"
+                  rows="8"
+                  value={message.message}
+                  onChange={handleChange}
+                  aria-label="Input message"
+                />
+                <div className="contact-button-row">
+                  {message.name !== "" &&
+                  message.email !== "" &&
+                  message.message !== "" ? (
+                    <button>Send Message</button>
+                  ) : (
+                    <button disabled>Send Message</button>
+                  )}
+                  <div className="message-feedback">
+                    <span className="green">{feedback}</span>
+                    <span className="red">{error}</span>
+                  </div>
                 </div>
-              </div>
-            </form>
-          </section>
-        </div>
-      </Layout>
-    </ModeProvider>
+              </form>
+            </section>
+          </div>
+        </Layout>
+      </ModeProvider>
+    </>
   )
 }

@@ -32,20 +32,22 @@ const ProjectsPage = () => {
     )
 
   return (
-    <ModeProvider>
-      <Layout>
-        <SEO title="Projects" />
-        <h2>Projects</h2>
-        <Thumbnails
-          projects={projects}
-          handleSelect={handleSelect}
-          handlePrev={handlePrev}
-          handleNext={handleNext}
-          num={project.number}
-        />
-        <Project project={project} />
-      </Layout>
-    </ModeProvider>
+    <>
+      <ModeProvider>
+        <Layout>
+          <SEO title="Projects" />
+          <h2>Projects</h2>
+          <Thumbnails
+            projects={projects}
+            handleSelect={handleSelect}
+            handlePrev={handlePrev}
+            handleNext={handleNext}
+            num={project.number}
+          />
+          <Project project={project} />
+        </Layout>
+      </ModeProvider>
+    </>
   )
 }
 

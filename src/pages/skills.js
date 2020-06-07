@@ -9,30 +9,32 @@ import SkillCategory from "../components/skillCategory"
 import { skillsFrontEnd, skillsBackEnd } from "../content/skills"
 
 const SkillsPage = () => (
-  <ModeProvider>
-    <Layout>
-      <SEO title="Skills" />
-      <h2>Skills & Tech Stack</h2>
-      <div>
+  <>
+    <ModeProvider>
+      <Layout>
+        <SEO title="Skills" />
+        <h2>Skills & Tech Stack</h2>
         <div>
-          <h3>Front-End</h3>
-          <div className="skills-category">
-            {skillsFrontEnd.map((category, index) => (
-              <SkillCategory key={index} category={category} />
-            ))}
+          <div>
+            <h3>Front-End</h3>
+            <div className="skills-category">
+              {skillsFrontEnd.map((category, index) => (
+                <SkillCategory key={index} category={category} />
+              ))}
+            </div>
+          </div>
+          <div>
+            <h3>Back-End</h3>
+            <div className="skills-category">
+              {skillsBackEnd.map((category, index) => (
+                <SkillCategory key={index} category={category} />
+              ))}
+            </div>
           </div>
         </div>
-        <div>
-          <h3>Back-End</h3>
-          <div className="skills-category">
-            {skillsBackEnd.map((category, index) => (
-              <SkillCategory key={index} category={category} />
-            ))}
-          </div>
-        </div>
-      </div>
-    </Layout>
-  </ModeProvider>
+      </Layout>
+    </ModeProvider>
+  </>
 )
 
 export default SkillsPage

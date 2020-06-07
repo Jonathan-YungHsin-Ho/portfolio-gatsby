@@ -6,6 +6,13 @@
 
 // You can delete this file if you're not using it
 
+import React from "react"
+import Div100vh from "react-div-100vh"
+
+export const wrapPageElement = ({ element }) => {
+  return <Div100vh>{element}</Div100vh>
+}
+
 // const React = require("react")
 // const Layout = require("./src/components/layout").default
 // const ModeProvider = require("./src/contexts/ModeContext").default
@@ -15,12 +22,12 @@
 // }
 // window.onresize()
 
-const appHeight = () => {
-  const doc = document.documentElement
-  doc.style.setProperty("--app-height", `${window.innerHeight}px`)
-}
-window.addEventListener("resize", appHeight)
-appHeight()
+// const appHeight = () => {
+//   const doc = document.documentElement
+//   doc.style.setProperty("--app-height", `${window.innerHeight}px`)
+// }
+// window.addEventListener("resize", appHeight)
+// appHeight()
 
 // exports.wrapPageElement = ({ element, props }) => {
 //   return (

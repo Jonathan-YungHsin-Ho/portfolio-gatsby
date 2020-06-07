@@ -90,6 +90,14 @@ a {
   text-decoration: none;
 }
 
+.header-wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 100;
+}
+
 header {
   border-bottom: 1px solid silver;
   padding: 0.75rem 1.5rem;
@@ -175,7 +183,7 @@ button:hover:enabled {
 
 .layout-container {
   min-height: -webkit-fill-available;
-  height: calc(var(--vh, 1vh) * 100);
+  /* height: calc(var(--vh, 1vh) * 100); */
   /* height: 100vh; */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -250,13 +258,20 @@ header h1 {
   -ms-flex-positive: 1;
   flex-grow: 1;
   overflow-x: hidden;
+  margin-top: 9rem;
   padding: 0 1.0875rem 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .main-wrapper {
+    margin-top: 14rem;
+  }
 }
 
 main {
   margin: 0 auto;
   max-width: 630px;
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-bottom: 1.5rem;
 }
 
@@ -499,35 +514,16 @@ article {
 
 /* Footer Styles */
 
-.footer-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-}
-
 .footer {
-  padding: 1.5rem 1.5rem 1rem;
+  padding: 1rem 1.5rem 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  justify-content: flex-end;
 }
 
 .footer-links {
-  width: 32rem;
+  width: 30rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -554,7 +550,7 @@ article {
 }
 
 .footer-copyright {
-  margin-top: 0.5rem;
+  margin: 1rem auto 3rem;
   font-size: 1.1rem;
 }
 
@@ -572,6 +568,10 @@ article {
 .dark-mode {
   background-color: var(--dark-color);
   color: var(--light-color);
+}
+
+.dark-mode .header-wrapper {
+  background-color: var(--dark-color);
 }
 
 .dark-mode a,

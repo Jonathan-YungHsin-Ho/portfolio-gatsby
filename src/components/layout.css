@@ -34,19 +34,6 @@ body {
   height: 100%;
 }
 
-/* html,
-body {
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  width: 100w;
-  height: 100vh;
-
-  @media not all and (hover: hover) {
-    height: var(--app-height);
-  }
-} */
-
 h1 {
   text-transform: uppercase;
   font-weight: 700;
@@ -183,8 +170,6 @@ button:hover:enabled {
 
 .layout-container {
   min-height: -webkit-fill-available;
-  /* height: calc(var(--vh, 1vh) * 100); */
-  /* height: 100vh; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

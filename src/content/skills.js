@@ -5,6 +5,7 @@ import {
   FaJsSquare,
   FaReact,
   FaVuejs,
+  FaAngular,
   FaLess,
   FaSass,
   FaGit,
@@ -33,7 +34,7 @@ export const skillsFrontEnd = [
       { svg: "redux", skill: "Redux" },
       { svg: "apollo", skill: "Apollo Client" },
       { icon: <FaVuejs />, skill: "Vue.js (Vue Router, Vuex)" },
-      { icon: "angular", skill: "Angular" },
+      { icon: <FaAngular />, skill: "Angular" },
     ],
   },
   {

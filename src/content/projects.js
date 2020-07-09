@@ -5,6 +5,7 @@ import { ImageRFL } from "../components/imageRFL"
 import { ImageJAMbda } from "../components/imageJAMbda"
 import { ImageLegendLambda } from "../components/imageLegendLambda"
 import { ImageCreateAdventure } from "../components/imageCreateAdventure"
+import { ImageTechStories } from "../components/imageTechStories"
 import { ImageGitHired } from "../components/imageGitHired"
 import { ImageBrewery } from "../components/imageBrewery"
 import { FaYoutube, FaGithub } from "react-icons/fa"
@@ -278,6 +279,37 @@ export const projects = [
   },
   {
     number: 7,
+    image: <ImageTechStories />,
+    thumbnail: "#6C63FF",
+    // 'thumbnail-border': '#14121f',
+    iconColor: "#121212",
+    fields: {
+      Project: "TechStories",
+      Type:
+        "Personal project; designed and built ReactJS app with Express back-end API",
+      "Front-End Stack": "ReactJS | React Hooks | Semantic UI | axios",
+      "Back-End Stack": "Node.js | Express | PostreSQL",
+      Description:
+        "App for developers, engineers, and other tech workers to share their early-career experiences",
+    },
+    site: "https://techstories.netlify.app/",
+    links: [
+      {
+        icon: <FaGithub style={iconStyle} />,
+        text: "Front-End Code",
+        url:
+          "https://github.com/Jonathan-YungHsin-Ho/techstories-frontend/tree/jonathan-ho",
+      },
+      {
+        icon: <FaGithub style={iconStyle} />,
+        text: "Back-End Code",
+        url:
+          "https://github.com/Jonathan-YungHsin-Ho/techstories-backend/tree/jonathan-ho",
+      },
+    ],
+  },
+  {
+    number: 8,
     image: <ImageGitHired />,
     thumbnail: "silver",
     // 'thumbnail-border': '#14121f',
@@ -300,7 +332,7 @@ export const projects = [
     ],
   },
   {
-    number: 8,
+    number: 9,
     image: <ImageBrewery />,
     thumbnail: "#ffb900",
     iconColor: "#121212",

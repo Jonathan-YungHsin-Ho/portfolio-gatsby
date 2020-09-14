@@ -22,6 +22,7 @@ export const skillsFrontEnd = [
       { icon: <FaHtml5 />, skill: "HTML5" },
       { icon: <FaCss3Alt />, skill: "CSS3" },
       { icon: <FaJsSquare />, skill: "JavaScript 6" },
+      { skill: "TypeScript" },
     ],
   },
   {
@@ -50,6 +51,7 @@ export const skillsFrontEnd = [
       { skill: "Styled-Components" },
       { skill: "Semantic UI" },
       { skill: "Material UI" },
+      { skill: "Spark Design System" },
     ],
   },
   {
@@ -58,6 +60,7 @@ export const skillsFrontEnd = [
       { svg: "axios", skill: "Axios" },
       { icon: <FaJsSquare />, skill: "Fetch API" },
       { icon: <GrGraphQl />, skill: "GraphQL" },
+      { skill: "RxJS" },
     ],
   },
   {
@@ -87,6 +90,7 @@ export const skillsBackEnd = [
     skills: [
       { icon: <FaNodeJs />, skill: "Node.js" },
       { icon: <FaPython />, skill: "Python" },
+      { skill: "C#" },
       { skill: "REST" },
       { svg: "sql", skill: "SQL" },
       { icon: <GrGraphQl />, skill: "GraphQL" },
@@ -97,6 +101,7 @@ export const skillsBackEnd = [
     category: "Frameworks",
     skills: [
       { icon: <FaNodeJs />, skill: "Express" },
+      { skill: "ASP.NET Core" },
       { svg: "knex", skill: "Knex" },
       { icon: <GrGraphQl />, skill: "GraphQL-Yoga" },
       { svg: "apollo", skill: "Apollo Server (Gateway, Federation)" },

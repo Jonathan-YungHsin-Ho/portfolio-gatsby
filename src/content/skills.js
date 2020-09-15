@@ -42,7 +42,7 @@ export const skillsFrontEnd = [
     category: "CSS Compilers",
     skills: [
       { icon: <FaLess />, skill: "LESS" },
-      { icon: <FaSass />, skill: "SASS/SCSS" },
+      { icon: <FaSass />, skill: "Sass/SCSS" },
     ],
   },
   {

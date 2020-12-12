@@ -8,15 +8,17 @@ const Project = ({ project }) => {
   return (
     <div>
       <a href={project.site} target="_blank" rel="noopener noreferrer">
-        <div className="project-image">
+        <div className={project.site && "project-image"}>
           <div>{project.image}</div>
           <div className="external-link-wrapper">
-            <FaExternalLinkAlt
-              className="external-link"
-              style={{
-                color: project.iconColor,
-              }}
-            />
+            {project.site && (
+              <FaExternalLinkAlt
+                className="external-link"
+                style={{
+                  color: project.iconColor,
+                }}
+              />
+            )}
           </div>
         </div>
       </a>

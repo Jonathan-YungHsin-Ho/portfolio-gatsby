@@ -48,7 +48,7 @@ export const projects = [
     // 		'Node.js | Express | graphql-yoga | Prisma | Apollo Server | Apollo Federation | bcryptjs | dotenv | jsonwebtoken | Stripe | jest | supertest',
     // 	'Gateway Stack': 'Apollo Server | Apollo Gateway | GraphQL',
     // },
-    site: "https://explorequality.com/",
+    // site: "https://explorequality.com/",
     links: [
       {
         icon: <FaYoutube style={iconStyle} />,

@@ -13,9 +13,9 @@ const About = () => (
       </div>
       <div>
         <p>
-          I'm a full-stack software engineer and former classroom educator who
-          enjoys using logical reasoning and problem-solving to bring lines of
-          code to life.
+          I'm a full-stack software engineer and former classroom educator (12+
+          years experience in public and independent schools) who enjoys using
+          logical reasoning and problem-solving to bring lines of code to life.
         </p>
         <br />
         <p>

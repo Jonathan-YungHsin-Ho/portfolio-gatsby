@@ -28,6 +28,7 @@ export const skillsFrontEnd = [
   {
     category: "Libraries/Frameworks",
     skills: [
+      { icon: <FaAngular />, skill: "Angular" },
       { icon: <FaReact />, skill: "ReactJS (Hooks, Context API)" },
       // { icon: 'react', skill: 'React Hooks' },
       // { icon: 'react', skill: 'Context API' },
@@ -35,14 +36,13 @@ export const skillsFrontEnd = [
       { svg: "redux", skill: "Redux" },
       { svg: "apollo", skill: "Apollo Client" },
       { icon: <FaVuejs />, skill: "Vue.js (Vue Router, Vuex)" },
-      { icon: <FaAngular />, skill: "Angular" },
     ],
   },
   {
     category: "CSS Compilers",
     skills: [
-      { icon: <FaLess />, skill: "LESS" },
       { icon: <FaSass />, skill: "Sass/SCSS" },
+      { icon: <FaLess />, skill: "LESS" },
     ],
   },
   {
@@ -88,9 +88,9 @@ export const skillsBackEnd = [
   {
     category: "Fundamentals",
     skills: [
+      { skill: "C#" },
       { icon: <FaNodeJs />, skill: "Node.js" },
       { icon: <FaPython />, skill: "Python" },
-      { skill: "C#" },
       { skill: "REST" },
       { svg: "sql", skill: "SQL" },
       { icon: <GrGraphQl />, skill: "GraphQL" },
@@ -100,8 +100,8 @@ export const skillsBackEnd = [
   {
     category: "Frameworks",
     skills: [
-      { icon: <FaNodeJs />, skill: "Express" },
       { skill: "ASP.NET Core" },
+      { icon: <FaNodeJs />, skill: "Express" },
       { svg: "knex", skill: "Knex" },
       { icon: <GrGraphQl />, skill: "GraphQL-Yoga" },
       { svg: "apollo", skill: "Apollo Server (Gateway, Federation)" },

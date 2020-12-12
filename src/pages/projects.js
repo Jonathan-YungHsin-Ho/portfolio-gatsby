@@ -20,14 +20,14 @@ const ProjectsPage = () => {
   const handlePrev = () =>
     setProject(
       projects.filter(
-        proj => proj.number === (project.number === 1 ? 8 : project.number - 1)
+        proj => proj.number === (project.number === 1 ? 9 : project.number - 1)
       )[0]
     )
 
   const handleNext = () =>
     setProject(
       projects.filter(
-        proj => proj.number === (project.number === 8 ? 1 : project.number + 1)
+        proj => proj.number === (project.number === 9 ? 1 : project.number + 1)
       )[0]
     )
 

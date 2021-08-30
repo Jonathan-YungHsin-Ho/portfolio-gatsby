@@ -29,7 +29,7 @@ export const skillsFrontEnd = [
     category: "Libraries/Frameworks",
     skills: [
       { icon: <FaAngular />, skill: "Angular" },
-      { icon: <FaReact />, skill: "ReactJS (Hooks, Context API)" },
+      { icon: <FaReact />, skill: "React (Hooks, Context API)" },
       // { icon: 'react', skill: 'React Hooks' },
       // { icon: 'react', skill: 'Context API' },
       { icon: <GrGatsbyjs />, skill: "Gatsby" },

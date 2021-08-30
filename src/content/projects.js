@@ -22,7 +22,7 @@ export const projects = [
       Project: "QualityHub + InterviewQ",
       Role: "Full-Stack Web Developer",
       "Front-End Stack":
-        "ReactJS | React Router | Apollo Client | GraphQL | axios | date-fns | jwt-decode | pusher-js | socket.io",
+        "React | React Router | Apollo Client | GraphQL | axios | date-fns | jwt-decode | pusher-js | socket.io",
       "Back-End Stack":
         "Node.js | Express | graphql-yoga | Prisma | Apollo Server | Apollo Federation | bcryptjs | dotenv | jsonwebtoken | Stripe | jest | supertest",
       "Gateway Stack": "Apollo Server | Apollo Gateway | GraphQL",
@@ -43,7 +43,7 @@ export const projects = [
     ],
     // stack: {
     // 	'Front-End Stack':
-    // 		'ReactJS | React Router | Apollo Client | GraphQL | axios | date-fns | jwt-decode | pusher-js | socket.io',
+    // 		'React | React Router | Apollo Client | GraphQL | axios | date-fns | jwt-decode | pusher-js | socket.io',
     // 	'Back-End Stack':
     // 		'Node.js | Express | graphql-yoga | Prisma | Apollo Server | Apollo Federation | bcryptjs | dotenv | jsonwebtoken | Stripe | jest | supertest',
     // 	'Gateway Stack': 'Apollo Server | Apollo Gateway | GraphQL',
@@ -76,7 +76,7 @@ export const projects = [
       Project: "International Child Nutrition Status Tracking",
       Role: "Front-End Framework Developer and Node Back-End Developer",
       "Front-End Stack":
-        "ReactJS | React Router | Context API | React Hooks | axios | recharts | styled-components",
+        "React | React Router | Context API | React Hooks | axios | recharts | styled-components",
       "Back-End Stack":
         "Node.js | Express | bcryptjs | cors | dotenv | helmet | jsonwebtoken | knex | knex-cleaner | pg",
       Description:
@@ -86,7 +86,7 @@ export const projects = [
     },
     // stack: {
     // 	'Front-End Stack':
-    // 		'ReactJS | React Router | Context API | React Hooks | axios | recharts | styled-components',
+    // 		'React | React Router | Context API | React Hooks | axios | recharts | styled-components',
     // 	'Back-End Stack':
     // 		'Node.js | Express | bcryptjs | cors | dotenv | helmet | jsonwebtoken | knex | knex-cleaner | sqlite (development) | nodemon (development) | pg (Production)',
     // },
@@ -160,7 +160,7 @@ export const projects = [
       Project: "JAMbda Treasure Hunt",
       Role: "Front-End Framework Developer",
       "Front-End Stack":
-        "ReactJS | React Router | Context API | axios | styled-components",
+        "React | React Router | Context API | axios | styled-components",
       Description:
         "Multi-User Dungeon RPG where players explore an island maze and compete to solve puzzles, applying computer science principles including: Algorithms and Data Structures, Blockchain, Graph Theory, and Computer Architecture",
       Team:
@@ -175,7 +175,7 @@ export const projects = [
     ],
     // stack: {
     // 	'Front-End Stack':
-    // 		'ReactJS | React Router | Context API | axios | styled-components',
+    // 		'React | React Router | Context API | axios | styled-components',
     // },
     site: "https://teamjam.netlify.com/",
     links: [
@@ -205,7 +205,7 @@ export const projects = [
       Project: "The Legend of Lambda",
       Role: "Front-End Framework Developer",
       "Front-End Stack":
-        "ReactJS | React Router | Context API | axios | styled-components | NES.css | pusher-js",
+        "React | React Router | Context API | axios | styled-components | NES.css | pusher-js",
       Description:
         "Multi-User Dungeon RPG where players collect questions preparing them for technical interviews",
       Team:
@@ -222,7 +222,7 @@ export const projects = [
     ],
     // stack: {
     // 	'Front-End Stack':
-    // 		'ReactJS | React Router | Context API | axios | styled-components | NES.css | pusher-js',
+    // 		'React | React Router | Context API | axios | styled-components | NES.css | pusher-js',
     // },
     site: "https://lambdalegend.netlify.com/",
     links: [
@@ -249,7 +249,7 @@ export const projects = [
         "Best Overall out of 30 submissions for Lambda Winter 2020 30-Hour Hackathon (estimated 150-200 participants working on 30+ projects)",
       Role: "Front-End Developer",
       "Front-End Stack":
-        "ReactJS | React Router | React Hooks | axios | d3 | styled-components | modali",
+        "React | React Router | React Hooks | axios | d3 | styled-components | modali",
       Description:
         "App platform for collaboratively creating interactive stories",
       Team:
@@ -261,7 +261,7 @@ export const projects = [
     ],
     // stack: {
     // 	'Front-End Stack':
-    // 		'ReactJS | React Router | React Hooks | axios | d3 | styled-components | modali',
+    // 		'React | React Router | React Hooks | axios | d3 | styled-components | modali',
     // },
     site: "https://createadventure.netlify.com/",
     links: [
@@ -286,8 +286,8 @@ export const projects = [
     fields: {
       Project: "TechStories",
       Type:
-        "Personal project; designed and built ReactJS app with Express back-end API",
-      "Front-End Stack": "ReactJS | React Hooks | Semantic UI | axios",
+        "Personal project; designed and built React app with Express back-end API",
+      "Front-End Stack": "React | React Hooks | Semantic UI | axios",
       "Back-End Stack": "Node.js | Express | PostreSQL",
       Description:
         "App for developers, engineers, and other tech workers to share their early-career experiences",
@@ -316,8 +316,8 @@ export const projects = [
     iconColor: "#121212",
     fields: {
       Project: "GitHired",
-      Type: "Personal project; designed and built ReactJS app",
-      "Front-End Stack": "ReactJS | React Redux | React Hooks | axios | thunk",
+      Type: "Personal project; designed and built React app",
+      "Front-End Stack": "React | React Redux | React Hooks | axios | thunk",
       Description:
         "App providing information regarding software development jobs via GitHub Jobs API",
     },
@@ -338,8 +338,8 @@ export const projects = [
     iconColor: "#121212",
     fields: {
       Project: "Find A Brewery!",
-      Type: "Personal project; designed and built ReactJS app",
-      "Front-End Stack": "ReactJS | React Redux | React Hooks | axios | thunk",
+      Type: "Personal project; designed and built React app",
+      "Front-End Stack": "React | React Redux | React Hooks | axios | thunk",
       Description:
         "App providing searchable information regarding American breweries via Open Brewery API",
     },

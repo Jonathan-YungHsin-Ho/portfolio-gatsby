@@ -17,7 +17,7 @@ const IndexPage = () => (
           <p>Full-stack software engineer and web developer.</p>
           {/* <p>12+ years experience in public and independent education.</p> */}
           <p>Lifelong learner who thrives in diverse team environments.</p>
-          <p>Currently an Associate Software Engineer with Quicken Loans.</p>
+          <p>Currently an Associate Software Engineer with Rocket Mortgage.</p>
         </div>
         <div className="landing-cta">
           <Link to="/projects">

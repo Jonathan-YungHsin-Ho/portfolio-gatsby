@@ -15,9 +15,8 @@ const IndexPage = () => (
         <h1 className="landing-header">Hello, I'm Jonathan.</h1>
         <div className="landing-text">
           <p>Full-stack software engineer and web developer.</p>
-          {/* <p>12+ years experience in public and independent education.</p> */}
           <p>Lifelong learner who thrives in diverse team environments.</p>
-          <p>Currently an Associate Software Engineer with Rocket Mortgage.</p>
+          <p>Currently a Software Engineer with Rocket Mortgage.</p>
         </div>
         <div className="landing-cta">
           <Link to="/projects">
